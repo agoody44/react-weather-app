@@ -38,7 +38,7 @@ function WeatherInfo() {
     }
 
     return (
-    <div className="App">
+    <div className="weatherinfo">
     <main>
         <div className="search-box">
         <input type="text"
