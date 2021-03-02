@@ -59,7 +59,11 @@ function App() {
         <div className='weather-box'>
           <div className='temp'>{Math.round(weather.main.temp)}°F</div>
           <div className='weather'>{weather.weather[0].main}</div>
-          {/* <div className='icon'>{weather.weather[0].icon}</div> */}
+          <div className='icon'><img
+              src={`http://openweathermap.org/img/w/${weather.weather[0].icon}.png`}
+              alt="weather status icon"
+              className="weather-icon"
+            /></div>
         </div>
       </div>
       ) : ('')}
